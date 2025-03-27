@@ -5,5 +5,5 @@ Para poder realizar la captura de las señales mioeléctricas se utilizan dos el
 
 ## Preparación
 Para la captura de la señal se preparo al sujeto, colocando los electrodos de superficie sobre el músculo radial del antebrazo como se logra ver en la imagen, colocando el electrodo de tierra sobre el olecranón. 
-![image](https://github.com/user-attachments/assets/8b6f3343-093a-4154-a2f6-493b15bb2b9e)
+#### ![image](https://github.com/user-attachments/assets/8b6f3343-093a-4154-a2f6-493b15bb2b9e)
 
