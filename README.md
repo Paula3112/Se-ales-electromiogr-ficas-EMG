@@ -8,6 +8,7 @@ Los rangos de frecuencia EMG pueden variar entre (FRECUENCIA)
 Para la captura de la señal se preparo al sujeto, colocando los electrodos de superficie sobre el músculo largo palmar y músculo braquirradial como se logra ver en la imagen, colocando el electrodo de tierra sobre el epicondilio medio. 
 
 ![Imagen de WhatsApp 2025-03-26 a las 23 17 12_c328d094](https://github.com/user-attachments/assets/e993660d-20cb-40b9-b269-3993543d67d3)
+
 *Imagen1. posicion de los electrodos*
 
 
