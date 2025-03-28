@@ -20,7 +20,8 @@ Para la captura de la señal EMG se utilizó un modulo AD8232 previamente conect
 ## Filtrado de la señal
 Se aplicaron dos tipos de filtros, un pasa altas para eliminar los componentes de baja frecuencia y un filtro pasa bajas para elimiinar frecuencias no deseadas, como en nuestro caso ruido ECG; con estos filtros logramos obtener una señal sin ruido como se observa en la imagen. 
 
-![señal filtrada](https://github.com/user-attachments/assets/3067e563-bbf1-4fd3-9950-24c189059174)
+![Figure_1](https://github.com/user-attachments/assets/fb8f9a63-d698-47f4-82a1-7b6687d0d586)
+
 *Imagen3. Señal filtrada*
 
 Se obtuvo con el siguiente codigo:
@@ -41,7 +42,7 @@ def butter_lowpass(cutoff, fs, order=5):
 ## Aventanamiento 
 Para el aventanamiento dividimos la señal usando la ventana Hanning (EXPLICACIÓN) obteniendo así estas ventanas de la señal. 
 Obteniendo así de las diferentes ventanas la Transformada de Fourier y el espcetro de frecuencias.
-Tambien se obtuvo el analisis estadistico de cada ventana por medio del test de hipotesis, en este caso usamos la grafica de dos colas como se muestra en las imagenes.
+Tambien se obtuvo el analisis estadistico de cada ventana por medio del test de hipotesis, en este caso usamos la grafica de dos colas.
 
 
 
