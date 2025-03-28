@@ -120,7 +120,7 @@ ax.axvline(last_t, color='red', linestyle='dashed', label=f't última = {last_t:
 ```
 
 ### Conclusión
-Como se logra observar en el gráfico, el valor de t se encuentra muy cerca al cero, lo que nos indica que no se rechaza la hipótesis nula, no hay evidencia suficiente parta decir que la media de la ventana 10 y la ventana 1 sean diferentes, esto nos indica que al momento de la captura EMG el sujeto no llego a la fatiga. 
+Como se logra observar en el gráfico, el valor de t se encuentra muy cerca al cero, lo que nos indica que no se rechaza la hipótesis nula, no hay evidencia suficiente para decir que la media de la ventana 10 y la ventana 1 sean diferentes, esto nos indica que al momento de la captura EMG el sujeto no llego a la fatiga. 
 ## Recomendaciones
 -Python 3.9, pyedflib, matplotlib, QtWidgets
 
