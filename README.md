@@ -51,86 +51,26 @@ Para la comparación de las dos ventanas tanto la de haming como la de hanning, 
 Para este trabajo de laboratorio se decidió trabajar con la ventana de Hanning siendo esta la mejor para la obtención de las señales EEG, también teniendo en cuenta que ofrece una mejor atenuación de la fuga, menos distorsión y reduciendo discontinuidades asegurando así que el análisis espectral sea más preciso obteniendo así estas ventanas de la señal. 
 Se obtuvo lo siguiente:
 
-![ven1](https://github.com/user-attachments/assets/85d03159-01f2-43b4-be49-1b1e84fafb20)
+![Imagen de WhatsApp 2025-03-27 a las 21 38 12_5d50efe5](https://github.com/user-attachments/assets/6f34ecea-9ef7-43de-ab3f-e09b7975d086)
 
-*Imagen4. ventana 1*
+*Imagen4. ventanas 1-4*
 
-![ven2](https://github.com/user-attachments/assets/33270b59-e970-4f08-b1d4-7f60f15124ef)
+![Imagen de WhatsApp 2025-03-27 a las 21 39 36_34592a29](https://github.com/user-attachments/assets/10b3d413-5f79-4ec3-8337-22f45ca9c90a)
 
-*Imagen5. ventana 2*
+*Imagen5. ventanas 5-10*
 
-![ven3](https://github.com/user-attachments/assets/32212ae9-b3a7-4080-926d-3addaeed6cf6)
-
-*Imagen6. ventana 3*
-
-![ven4](https://github.com/user-attachments/assets/61326f83-4fa6-4640-bca1-77916b2e65e6)
-
-*Imagen7. ventana 4*
-
-![ven5](https://github.com/user-attachments/assets/b6ae0656-9e93-4eac-bd48-87e069ff2264)
-
-*Imagen8. ventana 5*
-
-![ven6](https://github.com/user-attachments/assets/0eeb9dde-b7f0-49a1-bb97-0b134955389c)
-
-*Imagen9. ventana 6*
-
-![ven7](https://github.com/user-attachments/assets/55d71b29-38c4-4c02-a405-85cf69ad0ae9)
-
-*Imagen10. ventana 7*
-
-![ven8](https://github.com/user-attachments/assets/b400e04d-2cbd-400d-8d33-691d8cef756e)
-
-*Imagen11. ventana 8*
-
-![ven9](https://github.com/user-attachments/assets/c704fcc6-c607-4433-9ac2-6d3b06e99bbd)
-
-*Imagen12. ventana 9*
-
-![ven10](https://github.com/user-attachments/assets/c1675e05-20d3-489e-aa03-83ebbd6701df)
-
-*Imagen13. ventana 10*
 
 Obteniendo así de las diferentes ventanas la Transformada de Fourier y el espcetro de frecuencias.
+
 ![fft1](https://github.com/user-attachments/assets/0a10a6ed-4fb1-4392-8828-752ec0f5a223)
 
-*Imagen14. FFT 1*
+*Imagen6. FFT 1-4*
 
-![fft2](https://github.com/user-attachments/assets/9ae7dcca-763b-4c25-817c-1019dccb2087)
 
-*Imagen15. FFT 2*
 
-![fft3](https://github.com/user-attachments/assets/1b2f981b-859e-4c39-8710-da67768c2fd0)
+*Imagen6. FFT 5-10*
 
-*Imagen16. FFT 3*
 
-![fft4](https://github.com/user-attachments/assets/fa0f13c0-a882-434d-8dcc-392a1b3d548d)
-
-*Imagen17. FFT 4*
-
-![fft5](https://github.com/user-attachments/assets/1358b684-0273-4f81-8d0b-7fe1a7d8a98c)
-
-*Imagen18. FFT 5*
-
-![fft6](https://github.com/user-attachments/assets/b5179904-7d70-448e-9b8e-0ef15cb4b374)
-
-*Imagen19. FFT 6*
-
-![fft7](https://github.com/user-attachments/assets/6e4adaab-e699-4f55-96b0-7e82e1ade178)
-
-*Imagen20. FFT 7*
-
-![fft8](https://github.com/user-attachments/assets/20c5ba17-880a-4c48-90ea-aa9f956c77f1)
-
-*Imagen21. FFT 8*
-
-![fft9](https://github.com/user-attachments/assets/e8c24102-3978-4e63-abde-bdd0230bcedc)
-
-*Imagen22. FFT 9*
-
-![fft10](https://github.com/user-attachments/assets/79103d5d-7205-4fa1-92e1-a88a3cba832f)
-
-*Imagen23. FFT 10*
 
 
 Tambien se obtuvo el analisis estadistico de cada ventana por medio del test de hipotesis, en este caso usamos la grafica de dos colas.
