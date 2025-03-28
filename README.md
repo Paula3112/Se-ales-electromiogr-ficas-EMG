@@ -42,7 +42,9 @@ def butter_lowpass(cutoff, fs, order=5):
 
 ## Aventanamiento 
 Para el aventanamiento dividimos la señal usando la ventana Hanning (EXPLICACIÓN) obteniendo así estas ventanas de la señal. 
+
 ![ven1](https://github.com/user-attachments/assets/85d03159-01f2-43b4-be49-1b1e84fafb20)
+
 *Imagen4. ventana 1*
 
 ![ven2](https://github.com/user-attachments/assets/33270b59-e970-4f08-b1d4-7f60f15124ef)
