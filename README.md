@@ -128,7 +128,7 @@ Como se logra observar en el gráfico, el valor de t se encuentra muy cerca al c
 -est.paula.vcardenas@unimilitar.edu.co, est.sara.martin@unimilitar.edu.co, est.cristian.cmolina@unimilitar.edu.co
 
 ## Referencias
-Calle Jara, C. P., & Vicuña Pacheco, D. G. (2015). Identificación y análisis de eventos transitorios en motores de combustión interna mediante la posición del cigüeñal y árbol de levas, utilizando procesamiento de señales (Bachelor's thesis).
+Entender la ventana de Hanning: una guía práctica para principiantes. (2024, 14 noviembre). Wray Castle. https://wraycastle.com/es/blogs/knowledge-base/hanning-window?srsltid=AfmBOoqV-xrrZ48jYXADAYPj1efS08lz9JFmbSlEyJHO9bPY93W1iHAp
 
 
 
