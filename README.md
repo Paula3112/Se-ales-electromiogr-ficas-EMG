@@ -98,20 +98,29 @@ def compute_fft(windowed_signal, fs):
 
 ## Análisis Estadístico 
 También se obtuvo el análisis estadístico de cada ventana por medio del test de hipótesis, en este caso usamos la hipótesis nula, que dice que la µ10-µ1=0  y haciendo uso de la grafica de dos colas, obteniendo así el valor para t de la ventana 10 y la ventana 1, y se obtuvó el siguiente gráfico de dos colas. 
+
 ![grafica dos colas](https://github.com/user-attachments/assets/e7f78ccb-209f-4135-bf1e-01b709df4e9f)
 
 *Imagen24. analisis estadístico*
 
+se obtuvo con el siguiente codigo:
+```
+x = np.linspace(-4, 4, 1000)
+ax.plot(x, t.pdf(x, df=len(windowed_signal[0])-1), label='Distribución t', color='black')
+ax.axvline(first_t, color='blue', linestyle='dashed', label=f't primera = {first_t:.2f}')
+ax.axvline(last_t, color='red', linestyle='dashed', label=f't última = {last_t:.2f}')
+```
+
 ### Conclusión
 Como se logra observar en el gráfico, el valor de t se encuentra muy cerca al cero, lo que nos indica que no se rechaza la hipótesis nula, no hay evidencia suficiente parta decir que la media de la ventana 10 y la ventana 1 sean diferentes, esto nos indica que al momento de la captura EMG el sujeto no llego a la fatiga. 
 ## Recomendaciones
--Python 3.9, pyedflib, matplotlib, librosa.display, FastICA, simpleaudio
+-Python 3.9, pyedflib, matplotlib, QtWidgets
 
 ## Información de contacto
 -est.paula.vcardenas@unimilitar.edu.co, est.sara.martin@unimilitar.edu.co, est.cristian.cmolina@unimilitar.edu.co
 
 ## Referencias
-https://pmc.ncbi.nlm.nih.gov/articles/PMC3538438/ https://www.nti-audio.com/es/servicio/conocimientos/transformacion-rapida-de-fourier-fft Plaza, DHO (2018). Construcción de un arreglo de altavoces y su aplicación en audio personalizado (beamforming) (Tesis doctoral, Universidad de San Buenaventura Colombia).
+Calle Jara, C. P., & Vicuña Pacheco, D. G. (2015). Identificación y análisis de eventos transitorios en motores de combustión interna mediante la posición del cigüeñal y árbol de levas, utilizando procesamiento de señales (Bachelor's thesis).
 
 
 
