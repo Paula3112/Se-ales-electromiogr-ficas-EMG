@@ -43,15 +43,43 @@ def butter_lowpass(cutoff, fs, order=5):
 ## Aventanamiento 
 Para el aventanamiento dividimos la señal usando la ventana Hanning (EXPLICACIÓN) obteniendo así estas ventanas de la señal. 
 ![ven1](https://github.com/user-attachments/assets/85d03159-01f2-43b4-be49-1b1e84fafb20)
+*Imagen4. ventana 1*
+
 ![ven2](https://github.com/user-attachments/assets/33270b59-e970-4f08-b1d4-7f60f15124ef)
+
+*Imagen5. ventana 2*
+
 ![ven3](https://github.com/user-attachments/assets/32212ae9-b3a7-4080-926d-3addaeed6cf6)
+
+*Imagen6. ventana 3*
+
 ![ven4](https://github.com/user-attachments/assets/61326f83-4fa6-4640-bca1-77916b2e65e6)
+
+*Imagen7. ventana 4*
+
 ![ven5](https://github.com/user-attachments/assets/b6ae0656-9e93-4eac-bd48-87e069ff2264)
+
+*Imagen8. ventana 5*
+
 ![ven6](https://github.com/user-attachments/assets/0eeb9dde-b7f0-49a1-bb97-0b134955389c)
+
+*Imagen9. ventana 6*
+
 ![ven7](https://github.com/user-attachments/assets/55d71b29-38c4-4c02-a405-85cf69ad0ae9)
+
+*Imagen10. ventana 7*
+
 ![ven8](https://github.com/user-attachments/assets/b400e04d-2cbd-400d-8d33-691d8cef756e)
+
+*Imagen11. ventana 8*
+
 ![ven9](https://github.com/user-attachments/assets/c704fcc6-c607-4433-9ac2-6d3b06e99bbd)
+
+*Imagen12. ventana 9*
+
 ![ven10](https://github.com/user-attachments/assets/c1675e05-20d3-489e-aa03-83ebbd6701df)
+
+*Imagen13. ventana 10*
 
 
 
