@@ -87,15 +87,34 @@ Para el aventanamiento dividimos la señal usando la ventana Hanning (EXPLICACI�
 
 Obteniendo así de las diferentes ventanas la Transformada de Fourier y el espcetro de frecuencias.
 ![fft1](https://github.com/user-attachments/assets/0a10a6ed-4fb1-4392-8828-752ec0f5a223)
+*Imagen14. ventana 1*
+
 ![fft2](https://github.com/user-attachments/assets/9ae7dcca-763b-4c25-817c-1019dccb2087)
+*Imagen15. ventana 1*
+
 ![fft3](https://github.com/user-attachments/assets/1b2f981b-859e-4c39-8710-da67768c2fd0)
+*Imagen16. ventana 1*
+
 ![fft4](https://github.com/user-attachments/assets/fa0f13c0-a882-434d-8dcc-392a1b3d548d)
+*Imagen17. ventana 1*
+
 ![fft5](https://github.com/user-attachments/assets/1358b684-0273-4f81-8d0b-7fe1a7d8a98c)
+*Imagen18. ventana 1*
+
 ![fft6](https://github.com/user-attachments/assets/b5179904-7d70-448e-9b8e-0ef15cb4b374)
+*Imagen19. ventana 1*
+
 ![fft7](https://github.com/user-attachments/assets/6e4adaab-e699-4f55-96b0-7e82e1ade178)
+*Imagen20. ventana 1*
+
 ![fft8](https://github.com/user-attachments/assets/20c5ba17-880a-4c48-90ea-aa9f956c77f1)
+*Imagen21. ventana 1*
+
 ![fft9](https://github.com/user-attachments/assets/e8c24102-3978-4e63-abde-bdd0230bcedc)
+*Imagen22. ventana 1*
+
 ![fft10](https://github.com/user-attachments/assets/79103d5d-7205-4fa1-92e1-a88a3cba832f)
+*Imagen23. ventana 1*
 
 
 Tambien se obtuvo el analisis estadistico de cada ventana por medio del test de hipotesis, en este caso usamos la grafica de dos colas.
