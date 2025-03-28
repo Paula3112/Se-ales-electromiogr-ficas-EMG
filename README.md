@@ -20,7 +20,8 @@ Para la captura de la señal EMG se utilizó un modulo AD8232 previamente conect
 ## Filtrado de la señal
 Se aplicaron dos tipos de filtros, un pasa altas para eliminar los componentes de baja frecuencia y un filtro pasa bajas para elimiinar frecuencias no deseadas, como en nuestro caso ruido ECG; con estos filtros logramos obtener una señal sin ruido como se observa en la imagen. 
 
-![Figure_1](https://github.com/user-attachments/assets/fb8f9a63-d698-47f4-82a1-7b6687d0d586)
+![Figure_1](https://github.com/user-attachments/assets/351e1289-3d17-4f86-87eb-072f8036f45d)
+
 
 *Imagen3. Señal filtrada*
 
