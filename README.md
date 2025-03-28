@@ -59,18 +59,42 @@ Se obtuvo lo siguiente:
 
 *Imagen5. ventanas 5-10*
 
+La ventana de Hanning es como hacer que cada pedazo empiece y termine suavemente, como si bajaras el volumen poco a poco en los extremos. Así, cuando analizamos la frecuencia de la señal (con la FFT), evitamos que aparezcan ruidos extraños que no deberían estar ahí.
+
+En el código, la ventana de Hanning se aplica multiplicando cada pedazo de la señal por una curva que tiene forma de montaña. Esto ayuda a que el análisis sea mejor.
+  ```  
+def apply_windowing(signal, window_size, overlap):
+    step = int(window_size * (1 - overlap))  
+    hanning_window = np.hanning(window_size)  
+
+    return [signal[i:i + window_size] * hanning_window
+            for i in range(0, len(signal) - window_size, step)]
+
+window_size = 200  
+overlap = 0.3  
+windowed_signal = apply_windowing(filtered_signal, window_size, overlap)
+
+  ```  
 
 Obteniendo así de las diferentes ventanas la Transformada de Fourier y el espcetro de frecuencias.
 
-![fft1](https://github.com/user-attachments/assets/0a10a6ed-4fb1-4392-8828-752ec0f5a223)
+![Imagen de WhatsApp 2025-03-27 a las 21 40 53_3ff49f67](https://github.com/user-attachments/assets/5b7cf6c5-0717-405f-89ed-c8cad7c571af)
 
 *Imagen6. FFT 1-4*
 
-
+![Imagen de WhatsApp 2025-03-27 a las 21 42 24_be2777b3](https://github.com/user-attachments/assets/10716603-1df6-4cc5-a98e-be44310d1b3a)
 
 *Imagen6. FFT 5-10*
 
+Se realizaron con el siguiente codigo:
+  ```  
+from scipy.fftpack import fft, fftfreq
 
+def compute_fft(windowed_signal, fs):
+    freqs = fftfreq(len(windowed_signal[0]), d=1/fs)[:len(windowed_signal[0]) // 2]
+    fft_results = [np.abs(fft(segment))[:len(segment) // 2] for segment in windowed_signal]
+    return freqs, fft_results
+  ```  
 
 
 Tambien se obtuvo el analisis estadistico de cada ventana por medio del test de hipotesis, en este caso usamos la grafica de dos colas.
