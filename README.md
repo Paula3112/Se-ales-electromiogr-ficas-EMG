@@ -41,7 +41,16 @@ def butter_lowpass(cutoff, fs, order=5):
   ```  
 
 ## Aventanamiento 
-Para el aventanamiento dividimos la señal usando la ventana Hanning (EXPLICACIÓN) obteniendo así estas ventanas de la señal. 
+Para el aventanamiento dividimos la señal usando la ventana Hanning 
+Para la comparación de las dos ventanas tanto la de haming como la de hanning, podríamos hablar un poco de cada una para que así mismo podamos definir y decir cual de estas fue la que decidimos utilizar, estas dos son ventanas que suavizan dichas transiciones  	de las señales ayudando así la fuga en la transformada de Fourier. (La fuga para este contexto es el fenómeno ocurrido en el análisis de señales principalmente cuando se realice la transformada de Fourier) 
+
+![image](https://github.com/user-attachments/assets/90528910-0a0b-4e5a-a8e7-574efa362b9f)
+Tabla 1. Diferencia de Hanning y Hamming 
+
+Para este trabajo de laboratorio se decidió trabajar con la ventana de Hanning siendo esta la mejor para la obtención de las señales EEG, también teniendo en cuenta que ofrece una mejor atenuación de la fuga, menos distorsión y reduciendo discontinuidades asegurando así que el análisis espectral sea más preciso 
+
+
+obteniendo así estas ventanas de la señal. 
 Se obtuvo lo siguiente:
 
 ![ven1](https://github.com/user-attachments/assets/85d03159-01f2-43b4-be49-1b1e84fafb20)
