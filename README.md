@@ -42,6 +42,7 @@ def butter_lowpass(cutoff, fs, order=5):
 
 ## Aventanamiento 
 Para el aventanamiento dividimos la señal usando la ventana Hanning (EXPLICACIÓN) obteniendo así estas ventanas de la señal. 
+Se obtuvo lo siguiente:
 
 ![ven1](https://github.com/user-attachments/assets/85d03159-01f2-43b4-be49-1b1e84fafb20)
 
@@ -82,10 +83,6 @@ Para el aventanamiento dividimos la señal usando la ventana Hanning (EXPLICACI�
 ![ven10](https://github.com/user-attachments/assets/c1675e05-20d3-489e-aa03-83ebbd6701df)
 
 *Imagen13. ventana 10*
-
-
-
-
 
 Obteniendo así de las diferentes ventanas la Transformada de Fourier y el espcetro de frecuencias.
 ![fft1](https://github.com/user-attachments/assets/0a10a6ed-4fb1-4392-8828-752ec0f5a223)
