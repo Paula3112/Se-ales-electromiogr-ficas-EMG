@@ -1,7 +1,7 @@
 # EMG
 El electromiograma (EMG) es una grabación de la actividad eléctrica de los músculos, también llamada actividad mioeléctrica. Existen dos tipos de EMG, el de superficie y el intramuscular o de aguja. 
 Para poder realizar la captura de las señales mioeléctricas se utilizan dos electrodos activos y un electrodo de tierra. En el caso de los electrodos desuperficie, deben ser ubicados en la piel sobre el músculo a estudiar, mientras que el electrodo de tierra se conecta a una parte del cuerpo eléctricamente activa. La señal EMG será la diferencia entre las señales medidas por los electrodos activos. 
-Los rangos de frecuencia EMG pueden variar entre (FRECUENCIA)
+Los rangos de frecuencia EMG pueden variar entre 500 Hz y 2500 Hz. 
 
 
 ## Preparación
@@ -9,10 +9,10 @@ Para la captura de la señal se preparo al sujeto, colocando los electrodos de s
 
 ![Imagen de WhatsApp 2025-03-26 a las 23 17 12_c328d094](https://github.com/user-attachments/assets/e993660d-20cb-40b9-b269-3993543d67d3)
 
-*Imagen1. posicion de los electrodos*
+*Imagen1. posición de los electrodos*
 
 
-Para la captura de la señal EMG se utilizó un modulo AD8232 previamente conectado a un sistema de adquisición de datos DAQ, la frecuencia de muestreo que utilizamos fue de 5000 Hz, obteniendo así la siguiente señal EMG.
+Para la captura de la señal EMG se utilizó un modulo AD8232 previamente conectado a un sistema de adquisición de datos DAQ, la frecuencia de muestreo que utilizamos fue de 1000 Hz, obteniendo así la siguiente señal EMG.
 
 ![saraa](https://github.com/user-attachments/assets/e5db7a64-e507-445b-89e9-930e71df5a64)
 *Imagen2. Señal obtenida*
@@ -59,7 +59,7 @@ Se obtuvo lo siguiente:
 
 *Imagen5. ventanas 5-10*
 
-La ventana de Hanning es como hacer que cada pedazo empiece y termine suavemente, como si bajaras el volumen poco a poco en los extremos. Así, cuando analizamos la frecuencia de la señal (con la FFT), evitamos que aparezcan ruidos extraños que no deberían estar ahí.
+La ventana de Hanning es hacer que cada pedazo empiece y termine suavemente, como si bajaras el volumen poco a poco en los extremos. Así, cuando analizamos la frecuencia de la señal (con la FFT), evitamos que aparezcan ruidos extraños que no deberían estar ahí.
 
 En el código, la ventana de Hanning se aplica multiplicando cada pedazo de la señal por una curva que tiene forma de montaña. Esto ayuda a que el análisis sea mejor.
   ```  
@@ -96,12 +96,22 @@ def compute_fft(windowed_signal, fs):
     return freqs, fft_results
   ```  
 
-
-Tambien se obtuvo el analisis estadistico de cada ventana por medio del test de hipotesis, en este caso usamos la grafica de dos colas.
+## Análisis Estadístico 
+También se obtuvo el análisis estadístico de cada ventana por medio del test de hipótesis, en este caso usamos la hipótesis nula, que dice que la µ10-µ1=0  y haciendo uso de la grafica de dos colas, obteniendo así el valor para t de la ventana 10 y la ventana 1, y se obtuvó el siguiente gráfico de dos colas. 
 ![grafica dos colas](https://github.com/user-attachments/assets/e7f78ccb-209f-4135-bf1e-01b709df4e9f)
 
 *Imagen24. analisis estadístico*
 
+### Conclusión
+Como se logra observar en el gráfico, el valor de t se encuentra muy cerca al cero, lo que nos indica que no se rechaza la hipótesis nula, no hay evidencia suficiente parta decir que la media de la ventana 10 y la ventana 1 sean diferentes, esto nos indica que al momento de la captura EMG el sujeto no llego a la fatiga. 
+## Recomendaciones
+-Python 3.9, pyedflib, matplotlib, librosa.display, FastICA, simpleaudio
+
+## Información de contacto
+-est.paula.vcardenas@unimilitar.edu.co, est.sara.martin@unimilitar.edu.co, est.cristian.cmolina@unimilitar.edu.co
+
+## Referencias
+https://pmc.ncbi.nlm.nih.gov/articles/PMC3538438/ https://www.nti-audio.com/es/servicio/conocimientos/transformacion-rapida-de-fourier-fft Plaza, DHO (2018). Construcción de un arreglo de altavoces y su aplicación en audio personalizado (beamforming) (Tesis doctoral, Universidad de San Buenaventura Colombia).
 
 
 
