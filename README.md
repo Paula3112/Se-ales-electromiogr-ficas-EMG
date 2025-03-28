@@ -17,6 +17,14 @@ Para la captura de la señal EMG se utilizó un modulo AD8232 previamente conect
 ![saraa](https://github.com/user-attachments/assets/e5db7a64-e507-445b-89e9-930e71df5a64)
 *Imagen2. Señal obtenida*
 
+Para poder procesarla se realizo el siguiente codigo:
+````
+with nidaqmx.Task() as task:
+    task.ai_channels.add_ai_voltage_chan("Dev4/ai1")
+    task.timing.cfg_samp_clk_timing(5000.0, sample_mode=AcquisitionType.FINITE, samps_per_chan=10000)
+    data = task.read(READ_ALL_AVAILABLE)
+````
+
 ## Filtrado de la señal
 Se aplicaron dos tipos de filtros, un pasa altas para eliminar los componentes de baja frecuencia y un filtro pasa bajas para elimiinar frecuencias no deseadas, como en nuestro caso ruido ECG; con estos filtros logramos obtener una señal sin ruido como se observa en la imagen. 
 
